@@ -1,4 +1,5 @@
 from flask import Flask
+from flask_bootstrap import Bootstrap
 # from flask_migrate import Migrate
 # from flask_sqlalchemy import SQLAlchemy
 from shared.db import db
@@ -13,7 +14,7 @@ def admin_app():
     app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL', 'postgresql://user:pass@localhost/dbname')
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-    bootstrap(app)
+    Bootstrap(app)
 
     # DATABASE_URL = postgres://...（postgresql://plactice_db_user:TTkrtCpERistIJ4L0IkAJICimiJXgVxn@dpg-d1kk45mmcj7s73cqll90-a/plactice_db)
 
