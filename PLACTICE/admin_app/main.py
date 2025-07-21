@@ -6,7 +6,7 @@ from shared.db import db
 from shared.auth import roles_required
 
 admin_bp = Blueprint('admin', __name__)
-# bootstrap = Bootstrap(admin_bp)
+bootstrap = Bootstrap(admin_bp)
 
 
 #ホーム画面
