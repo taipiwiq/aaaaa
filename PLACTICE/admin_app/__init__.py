@@ -13,6 +13,8 @@ def admin_app():
     app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL', 'postgresql://user:pass@localhost/dbname')
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
+    bootstrap(app)
+
     # DATABASE_URL = postgres://...（postgresql://plactice_db_user:TTkrtCpERistIJ4L0IkAJICimiJXgVxn@dpg-d1kk45mmcj7s73cqll90-a/plactice_db)
 
     app.jinja_loader = ChoiceLoader([
