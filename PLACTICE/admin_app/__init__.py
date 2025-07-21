@@ -10,7 +10,7 @@ import os
 def admin_app():
     app = Flask(__name__)
     app.config['SECRET_KEY'] = os.urandom(24)
-    app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')
+    app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL', 'postgresql://user:pass@localhost/dbname')
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
     # DATABASE_URL = postgres://...（postgresql://plactice_db_user:TTkrtCpERistIJ4L0IkAJICimiJXgVxn@dpg-d1kk45mmcj7s73cqll90-a/plactice_db)
