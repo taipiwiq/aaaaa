@@ -33,7 +33,7 @@ Flask + PostgreSQL + Bootstrap で構築しており、ユーザー認証、ロ�
 <p style="display: inline">
   <!-- フロントエンド -->
   <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white&style=for-the-badge">
-  <img src="https://img.shields.io/badge/GitHub-181717?logo=github&style=for-the-badge&logoColor=white">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white&style=for-the-badge">
   <img src="https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=white&style=for-the-badge">
   <!-- バックエンド -->
   <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=for-the-badge">
@@ -111,5 +111,6 @@ project/
 ご質問・改善提案・導入希望などあれば、お気軽にお問い合わせください。
 
 ---
+
 
 
